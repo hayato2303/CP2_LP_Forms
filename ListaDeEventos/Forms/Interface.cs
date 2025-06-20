@@ -23,7 +23,7 @@ namespace ListaDeEventos
             {
                 MessageBox.Show("Nenhuma turma encontrada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
+        } 
 
         private void class_list_SelectedIndexChanged(object sender, EventArgs e)
         {
