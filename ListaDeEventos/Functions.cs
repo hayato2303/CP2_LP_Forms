@@ -28,7 +28,7 @@ namespace ListaDeEventos
 
     public class Functions
     {
-        private readonly string connectionString = "server=localhost;database=test;uid=root;pwd=;";
+        private readonly string connectionString = "server=localhost;database=lp2_cp2;uid=root;pwd=;";
 
         public bool Register(string email, string password, string turma, string nome)
         {
