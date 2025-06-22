@@ -38,6 +38,10 @@
             Hora_Inicio = new DataGridViewTextBoxColumn();
             Hora_Fim = new DataGridViewTextBoxColumn();
             Desc = new DataGridViewTextBoxColumn();
+            ID = new DataGridViewTextBoxColumn();
+            Delete_button = new Button();
+            Create_button = new Button();
+            userData = new Label();
             ((System.ComponentModel.ISupportInitialize)EventsTable).BeginInit();
             SuspendLayout();
             // 
@@ -76,7 +80,7 @@
             EventsTable.AllowUserToResizeRows = false;
             EventsTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             EventsTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            EventsTable.Columns.AddRange(new DataGridViewColumn[] { Nome, Data_Inicio, Data_Fim, Hora_Inicio, Hora_Fim, Desc });
+            EventsTable.Columns.AddRange(new DataGridViewColumn[] { Nome, Data_Inicio, Data_Fim, Hora_Inicio, Hora_Fim, Desc, ID });
             EventsTable.Location = new Point(138, 27);
             EventsTable.MultiSelect = false;
             EventsTable.Name = "EventsTable";
@@ -123,15 +127,57 @@
             Desc.ReadOnly = true;
             Desc.Visible = false;
             // 
+            // ID
+            // 
+            ID.HeaderText = "Id";
+            ID.Name = "ID";
+            ID.ReadOnly = true;
+            ID.Visible = false;
+            // 
+            // Delete_button
+            // 
+            Delete_button.Location = new Point(672, 378);
+            Delete_button.Name = "Delete_button";
+            Delete_button.Size = new Size(61, 25);
+            Delete_button.TabIndex = 7;
+            Delete_button.Text = "Delete";
+            Delete_button.UseVisualStyleBackColor = true;
+            Delete_button.Click += Delete_button_Click;
+            // 
+            // Create_button
+            // 
+            Create_button.Location = new Point(672, 347);
+            Create_button.Name = "Create_button";
+            Create_button.Size = new Size(61, 25);
+            Create_button.TabIndex = 8;
+            Create_button.Text = "Criar";
+            Create_button.UseVisualStyleBackColor = true;
+            Create_button.Click += Create_button_Click;
+            // 
+            // userData
+            // 
+            userData.AutoSize = true;
+            userData.Location = new Point(138, 9);
+            userData.Name = "userData";
+            userData.Size = new Size(38, 15);
+            userData.TabIndex = 9;
+            userData.Text = "label1";
+            // 
             // Interface
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(745, 450);
+            Controls.Add(userData);
+            Controls.Add(Create_button);
+            Controls.Add(Delete_button);
             Controls.Add(EventsTable);
             Controls.Add(DescriptionLabel);
             Controls.Add(class_label);
             Controls.Add(class_list);
+            MaximizeBox = false;
+            MaximumSize = new Size(761, 489);
+            MinimumSize = new Size(761, 489);
             Name = "Interface";
             Text = "Eventos";
             Load += Interface_Load;
@@ -152,5 +198,9 @@
         private DataGridViewTextBoxColumn Hora_Inicio;
         private DataGridViewTextBoxColumn Hora_Fim;
         private DataGridViewTextBoxColumn Desc;
+        private Button Delete_button;
+        private Button Create_button;
+        private DataGridViewTextBoxColumn ID;
+        private Label userData;
     }
 }

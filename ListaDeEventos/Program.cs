@@ -11,7 +11,19 @@ namespace ListaDeEventos
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Interface());
+
+            // Interface do login
+            var loginForm = new Login();
+            Application.Run(loginForm);
+            if (!loginForm.isLoggedIn)
+                return;
+
+            // inicia a interface principal com os dados do usuario logado
+            var mainInterface = new Interface();
+            mainInterface.activeUser = loginForm.loggedInUser;
+            mainInterface.activeClass = loginForm.loggedInUser.Class;
+
+            Application.Run(mainInterface);
         }
     }
 }

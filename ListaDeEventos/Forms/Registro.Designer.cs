@@ -154,6 +154,9 @@
             Controls.Add(label2);
             Controls.Add(R_email);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MaximumSize = new Size(257, 301);
+            MinimumSize = new Size(257, 301);
             Name = "Registro";
             Text = "Registro";
             Load += Registro_Load;
