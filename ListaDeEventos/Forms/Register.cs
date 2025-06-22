@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ListaDeEventos
 {
-    public partial class Registro : Form
+    public partial class Register : Form
     {
-        public Registro()
+        public Register()
         {
             InitializeComponent();
         }

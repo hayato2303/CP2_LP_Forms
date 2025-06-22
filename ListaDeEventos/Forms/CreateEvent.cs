@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace ListaDeEventos.Forms
 {
-    public partial class CriarEvento_ : Form
+    public partial class CreateEvent : Form
     {
         public UserEvent createdUserEvent = null;
         public int userId = 0;
 
-        public CriarEvento_()
+        public CreateEvent()
         {
             InitializeComponent();
         }

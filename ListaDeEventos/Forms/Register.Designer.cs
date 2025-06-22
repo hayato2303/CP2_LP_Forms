@@ -1,6 +1,6 @@
 ﻿namespace ListaDeEventos
 {
-    partial class Registro
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.

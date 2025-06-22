@@ -1,6 +1,6 @@
 ﻿namespace ListaDeEventos.Forms
 {
-    partial class CriarEvento_
+    partial class CreateEvent
     {
         /// <summary>
         /// Required designer variable.

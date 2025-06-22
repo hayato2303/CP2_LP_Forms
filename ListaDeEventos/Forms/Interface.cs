@@ -116,7 +116,7 @@ namespace ListaDeEventos
             {
                 try
                 {
-                    var createEventForm = new CriarEvento_
+                    var createEventForm = new CreateEvent
                     {
                         userId = activeUser.Id
                     };

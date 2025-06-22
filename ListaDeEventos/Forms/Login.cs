@@ -54,7 +54,7 @@ namespace ListaDeEventos
         private void label3_Click(object sender, EventArgs e)
         {
             // Abre o formulário de registro
-            var registroForm = new Registro();
+            var registroForm = new Register();
             registroForm.ShowDialog();
 
             // Após fechar o formulário de registro
